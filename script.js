@@ -1,6 +1,21 @@
 const grid = document.querySelector('.grid-container');
+
+
 const colorPicker = document.getElementById('colorPicker');
 colorPicker.addEventListener('change', teste)
+
+const slider = document.querySelector('.slider');
+slider.addEventListener('change', newGrid)
+
+
+let inkColor = 'black';
+
+
+const colorSelectors = document.querySelectorAll('.colorSelector');
+colorSelectors.forEach(selector =>{
+    selector.addEventListener('click', changeColor);
+})
+
 
 function teste(){
     console.log(this.value);
@@ -22,39 +37,46 @@ function createDivs(size = 16){
 
 function paintTile(){
 
-
     switch(inkColor){
         
-        case 'grey': {
+        case 'gray': {
             let tileRGB = String(this.style.backgroundColor);
             tileRGB = tileRGB.match(/\d+/g);// match receives a regex to match ao digits in the string then return an array containing them
             this.style.backgroundColor = `rgb(${tileRGB[0]-26},${tileRGB[1]-26},${tileRGB[2]-26})`;
+            break;
         }
-        case 'rainbow': {
+        case 'random': {
             this.style.backgroundColor = `rgb(${randomRGB()},${randomRGB()},${randomRGB()})`;
+            break;
         }
         case 'pick': {
-            this.style.backgroundColor = "";
-        }
-        default: {
-            this.style.backgroundColor = `black`;
+            this.style.backgroundColor = pickerColor();
+            break;
+        }case'eraser': {
+            this.style.backgroundColor = `rgb(255,255,255)`;
+            break;
+        }default: {
+            this.style.backgroundColor = `rgb(0,0,0)`;
+            break;
         }
     }
 
+}
+
+function pickerColor(){
+    return colorPicker.value;
 }
 
 function randomRGB(){
     return Math.random() * 255;
 }
 
-let inkColor = 'black';
-
 function changeColor(){
-    console.log(color);
-    inkColor = color;
+    console.log(this.value);
+    inkColor = this.value;
 }
 
-//
+
 function clearGrid(){
     const tiles = document.querySelectorAll('.tile');
     tiles.forEach(tile => tile.style.backgroundColor = 'rgb(255, 255, 255');//white
@@ -62,8 +84,7 @@ function clearGrid(){
 
 function newGrid(){
 
-    let newSize = prompt("Enter the size of new grid");
-    if(isNaN(newSize)) newSize=16;
+    const newSize = this.value;
     console.log(newSize);
 
     const gridTile = document.querySelectorAll(".tile");
@@ -77,6 +98,8 @@ function newGrid(){
 
 
 }
+
+
 
 createDivs(16);
 

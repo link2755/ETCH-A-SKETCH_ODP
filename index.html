@@ -16,10 +16,12 @@
     </main>
     <button class="clearGrid" onclick="clearGrid()">Clear Grid</button>
     <button class="newGrid" onclick="newGrid()">New Grid</button>
-    <button class="colorSelector" onclick="changeColor()">Black</button>
-    <button class="colorSelector" onclick="changeColor()">ShadesOfGray</button>
-    <button class="colorSelector" onclick="changeColor()">Rainbow</button>
-    <button class="colorSelector" >Pick:<input type="color" id="colorPicker" value="#000000"></button>
+    <input type="range" min="1" max="100" value="50" class="slider">
+    <button class="colorSelector" value="black">Black</button>
+    <button class="colorSelector" value="gray">Gray Shader</button>
+    <button class="colorSelector" value="random">Rainbow</button>
+    <button class="colorSelector" value="eraser">Eraser</button>
+    <button class="colorSelector" value="pick">Pick:<input type="color" id="colorPicker" value="#000000"></button>
 
 
 
