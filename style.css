@@ -1,19 +1,18 @@
-main{
-    width: 500px;
-    height:500px;
-}
+
 .grid-container{
     display: grid;
     grid-template-columns: repeat(16, auto);
     grid-template-rows: repeat(16, auto);
     border: 1px solid rgba(0, 0, 0, 0.8);
+    width: 600px;
+    height:600px;
 
 
 }
 
 .tile {
-    background-color: rgba(255, 255, 255, 0.8);
     align-self: 100%;
+    transition: 0.5s;
 }
 
 .painted {

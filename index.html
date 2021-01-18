@@ -8,11 +8,21 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <main class="grid-container">
+    <main>
+        <div class="grid-container">
+
+        </div>
         
     </main>
-    <button onclick="clearGrid()">Clear Grid</button>
-    <button onclick="newGrid()">Clear Grid</button>
+    <button class="clearGrid" onclick="clearGrid()">Clear Grid</button>
+    <button class="newGrid" onclick="newGrid()">New Grid</button>
+    <button class="colorSelector" onclick="changeColor()">Black</button>
+    <button class="colorSelector" onclick="changeColor()">ShadesOfGray</button>
+    <button class="colorSelector" onclick="changeColor()">Rainbow</button>
+    <button class="colorSelector" >Pick:<input type="color" id="colorPicker" value="#000000"></button>
+
+
+
 
     <script src="./script.js"></script>
 </body>
