@@ -1,18 +1,27 @@
+main {
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+    border: 3px solid #73AD21;
+    text-align: center;
+}
 
 .grid-container{
+
     display: grid;
     grid-template-columns: repeat(16, auto);
     grid-template-rows: repeat(16, auto);
     border: 1px solid rgba(0, 0, 0, 0.8);
     width: 600px;
     height:600px;
+    margin: auto;
 
 
 }
 
 .tile {
     align-self: 100%;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
 .painted {
