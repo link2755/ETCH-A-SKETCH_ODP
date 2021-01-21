@@ -6,6 +6,10 @@ main {
     text-align: center;
 }
 
+body{
+    background-color: #a8dadc;
+}
+
 .grid-container{
 
     display: grid;

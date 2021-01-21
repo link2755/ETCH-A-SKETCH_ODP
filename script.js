@@ -1,12 +1,9 @@
 const grid = document.querySelector('.grid-container');
 
-
 const colorPicker = document.getElementById('colorPicker');
-colorPicker.addEventListener('change', teste)
 
 const slider = document.querySelector('.slider');
 slider.addEventListener('change', newGrid)
-
 
 let inkColor = 'black';
 
@@ -14,11 +11,13 @@ let inkColor = 'black';
 const colorSelectors = document.querySelectorAll('.colorSelector');
 colorSelectors.forEach(selector =>{
     selector.addEventListener('click', changeColor);
+    selector.addEventListener('click', selectButton);
 })
 
-
-function teste(){
-    console.log(this.value);
+function selectButton() {
+    const activeButton = document.querySelector('.active');
+    activeButton.classList.remove('active');
+    this.classList.add('active');
 }
 
 function createDivs(size = 16){
@@ -45,7 +44,7 @@ function paintTile(){
             this.style.backgroundColor = `rgb(${tileRGB[0]-26},${tileRGB[1]-26},${tileRGB[2]-26})`;
             break;
         }
-        case 'random': {
+        case 'rainbow': {
             this.style.backgroundColor = `rgb(${randomRGB()},${randomRGB()},${randomRGB()})`;
             break;
         }
@@ -72,8 +71,9 @@ function randomRGB(){
 }
 
 function changeColor(){
-    console.log(this.value);
     inkColor = this.value;
+    console.log(inkColor);
+
 }
 
 

@@ -1,0 +1,124 @@
+body {
+    background: hsl(227, 10%, 10%);
+    font: 300 1em 'Fira Sans', sans-serif;
+    color: #fff;
+
+}
+
+
+/* Black Button */
+[value='black']{
+    border-color: rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+}
+
+[value='black']:hover,
+[value='black'].active{
+    box-shadow: inset 0 0 0 2em rgb(0, 0, 0);
+    border-color: rgb(0, 0, 0);
+    color: #fff;
+}
+
+
+/* Gray Button */
+[value='gray']{
+    border-color: rgb(100, 100, 100);
+    color: rgb(100, 100, 100);
+}
+
+[value='gray']:hover,
+[value='gray'].active{
+    box-shadow: inset 0 0 0 2em rgb(100, 100, 100);
+    border-color: rgb(100, 100, 100);
+    color: #fff;
+}
+
+
+/* Rainbow Button */
+[value='rainbow'] {
+    animation-delay: 2s;
+    border-image: linear-gradient(to bottom right, #A800FF 0%, #0079FF 25%, #00F11D 50%, #FF7F00 75%, #ff0000 100%);
+    border-image-slice: 1;
+}
+
+[value='rainbow']:hover{
+    box-shadow: inset 0 0 0 2em #ff0000;
+}
+
+[value='rainbow'].active {
+    animation: rainbow-gradient 10s linear infinite;
+}
+
+[value='rainbow']:hover,
+[value='rainbow'].active {
+    border-image: none;
+    border-image-slice: none;
+}
+
+/*PickColor Button*/
+
+[value='pick'] {
+    border-color: rgb(170, 4, 142);
+    color: rgb(170, 4, 142);
+}
+
+[value='pick']:hover,
+[value='pick'].active{
+    box-shadow: inset 0 0 0 2em rgb(165, 27, 80);
+    border-color: rgb(165, 27, 80);
+    color: #fff;
+}
+
+/* Eraser Button */
+[value='eraser']{
+    border-color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+}
+
+[value='eraser']:hover,
+[value='eraser'].active{
+    box-shadow: inset 0 0 0 2em rgb(255, 255, 255);
+    border-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+
+
+
+@keyframes rainbow-gradient {
+    100%, 0%{
+        box-shadow: inset 0 0 0 2em #ff0000;
+    }
+    16%{
+        box-shadow: inset 0 0 0 2em #FF7F00;   
+    }
+    32%{
+        box-shadow: inset 0 0 0 2em #FFEF00;
+    }
+    48%{
+        box-shadow: inset 0 0 0 2em #00F11D;
+    }
+    60%{
+        box-shadow: inset 0 0 0 2em #0079FF;
+    }
+    72%{
+        box-shadow: inset 0 0 0 2em #A800FF;
+    }
+    88%{
+        box-shadow: inset 0 0 0 2em #ee82ee;
+    }
+
+}
+
+button {  
+
+    transition: 0.25s;
+    background: transparent;
+    border: 2px solid;
+    font: inherit;
+    line-height: 1;
+    margin: 0.5em;
+    width: 150px;
+    height: 50px;
+}
+

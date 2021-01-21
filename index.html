@@ -6,6 +6,7 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./buttonStyles.css">
 </head>
 <body>
     <main>
@@ -14,11 +15,12 @@
         
         <button class="clearGrid" onclick="clearGrid()">Clear Grid</button>
         <input type="range" min="1" max="100" value="50" class="slider">
-        <button class="colorSelector" value="black">Black</button>
+        <button class="colorSelector active" value="black">Black</button>
         <button class="colorSelector" value="gray">Gray Shader</button>
-        <button class="colorSelector" value="random">Rainbow</button>
-        <button class="colorSelector" value="eraser">Eraser</button>
+        <button class="colorSelector" value="rainbow">Rainbow</button>
         <button class="colorSelector" value="pick">Pick:<input type="color" id="colorPicker" value="#000000"></button>
+        <button class="colorSelector" value="eraser">Eraser</button>
+
     </main>
 
 
