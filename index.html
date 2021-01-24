@@ -3,26 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
+    <title>Etch A Sketch</title>
+    
+    <link rel="icon" href="./imgs/icon.png">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./buttonStyles.css">
     <link rel='stylesheet' href="./intro.css"></link>
 
 </head>
 <body>
-    <main>
-        
-        <button class="clearGrid pulse" value="clear" onclick="clearGrid()">Clear Grid</button>
-        <input type="range" min="1" max="100" value="50" class="slider">
-        <div class="grid-container"></div>
-        
 
-        <button class="colorSelector active" value="black">Black</button>
-        <button class="colorSelector" value="gray">Gray Shader</button>
-        <button class="colorSelector" value="rainbow">Rainbow</button>
-        <button class="colorSelector" value="pick">Pick:<input type="color" id="colorPicker" value="#000000"></button>
-        <button class="colorSelector" value="eraser">Eraser</button>
+    <main>
+
+        <h1>Etch A Sketch</h1>
+        <div id="config">
+            <button class="clearGrid pulse" value="clear" onclick="clearGrid()">Clear Grid</button>
+            <input type="range" min="1" max="100" value="50" class="slider">
+            <button class="colorSelector active" value="black">Black</button>
+            <button class="colorSelector" value="gray">Gray Shader</button>
+            <button class="colorSelector" value="rainbow">Rainbow</button>
+            <button class="colorSelector" value="pick">Pick:<input type="color" id="colorPicker" value="#000000"></button>
+            <button class="colorSelector" value="eraser">Eraser</button>
+        </div>
+
+        <div id="gridDiv">
+            <div class="grid-container"></div>
+        </div>
 
     </main>
 
