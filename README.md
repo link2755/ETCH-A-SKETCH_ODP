@@ -3,9 +3,8 @@
 <br />
 <p align="center">
   
-  <h1 align="center">🚀======IN PROGRESS======🚀<h1>
-
-  <h3 align="center">ETCH-A-SKETCH</h3>
+  <h1 align="center">ETCH-A-SKETCH</h1>
+  
 
   <p align="center">
     This site brings the childhood toy Etch A Sketch to a virtual version
