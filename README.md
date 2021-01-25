@@ -49,7 +49,7 @@ In this project I practiced mainly the DOM manipulation with javascript , HTML g
 
 ## Getting Started
 
-You can check Live preview of the site <a href="#">HERE<a>
+You can check Live preview of the site <a href="https://link2755.github.io/ETCH-A-SKETCH_ODP/" target="_blank">HERE<a>
 
 <!-- LICENSE -->
 ## License
@@ -61,7 +61,4 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
-
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
-
+<a href="https://www.linkedin.com/in/eduardo-ravagnani-de-melo-81282b14b/" target="_blank">Linkedin</a>
