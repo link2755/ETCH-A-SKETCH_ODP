@@ -11,6 +11,7 @@ main {
 
 footer{
     background-color: transparent;
+    background: transparent;
     position: absolute;
     bottom: 50%;
     right: 50%;

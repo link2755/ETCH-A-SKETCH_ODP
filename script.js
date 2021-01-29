@@ -7,7 +7,6 @@ slider.addEventListener('change', newGrid)
 
 let inkColor = 'black';
 
-
 const colorSelectors = document.querySelectorAll('.colorSelector');
 colorSelectors.forEach(selector =>{
     selector.addEventListener('click', changeColor);
@@ -75,7 +74,6 @@ function changeColor(){
     console.log(inkColor);
 
 }
-
 
 function clearGrid(){
     const tiles = document.querySelectorAll('.tile');
