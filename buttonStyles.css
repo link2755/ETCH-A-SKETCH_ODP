@@ -134,10 +134,11 @@ button {
     border: 2px solid;
     font: inherit;
     line-height: 1;
-    margin: 0.5em;
+    margin: 2vh;
     width: 15vw;
     height: 5vw;
     max-width: 150px;
     max-height: 50px;
+    text-align: center;
 }
 

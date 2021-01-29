@@ -1,5 +1,7 @@
 html {
     background: linear-gradient(to right, #0066eb 0%, #ff8ab3 100%);
+    width: 100%;
+    height: 100%;
 }
 
 main {
@@ -21,9 +23,10 @@ h1 {
 }
 
 #config {
-    display: block;
+    display: inline-block;
     width: 200px;
     margin: 5vh;
+    text-align: center;
     background-color:  #a2b6f7;
 
 }
